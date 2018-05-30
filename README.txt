@@ -5,7 +5,7 @@ This is a exam project using openjtalk to develop a alarm and share it in Github
 
 The manual consists two parts. In the first part, I will share the experience of developing the alarm with speech synthesis engine. In the second part, I want to share the experience of how to connect Visual Studio Code with Github to manage the version of the project.
 Beware that all the opration is done in ubuntu18.04LTS
-----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 Part 1
 
 Preperation for openjtalk coding.
@@ -28,7 +28,7 @@ $sudo cp -r MMDAgent_Example-1.6/Voice/mei/ /usr/share/hts-voice
 #with the SDK above you have enough material to build a simple synthesis program.
 #As for the code sourse, please check the file "test.py" in the same folder. 
 
-------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 Part 2
 
  Simple manual for the setup for VScode to Github.
@@ -63,7 +63,8 @@ $git push origin master
 
 #$git status #confirm the current status
 
-------------------------------------------------------------------
+==================================================================================================
+
 #Acknowledge
 
 I want thank Mr.honma for the help in connecting the VScode to Github 
