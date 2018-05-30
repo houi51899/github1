@@ -1,7 +1,9 @@
-This is a exam project using openjtalk to develop a alarm. (speech synthesis)
+This is a exam project using openjtalk to develop a alarm and share it in Github. (speech synthesis)
+
+==========================================================================================================
 The manual consists two parts. In the first part, I will share the experience of developing the alarm with speech synthesis engine. In the second part, I want to share the experience of how to connect Visual Studio Code with Github to manage the version of the project.
 Beware that all the opration is done in ubuntu18.04LTS
-==========================================================================================================
+----------------------------------------------------------------------------------------------------------
 Part 1
 
 Preperation for openjtalk coding.
@@ -42,11 +44,11 @@ in the directory where the files there you want to upload
 
 1.
 $git add .  
-# select all the files here or use command: $git add "filename" to select  a single file  
+#select all the files here or use command: $git add "filename" to select  a single file  
 #PS.when use "visual studio code"'s git, press the "+"button to add/select the file, and do not! not! not! use the commit button function in VScode )
 2.
 $git commit -m "comment"  
-# commit the selected file(do input this command in console)
+#commit the selected file(do input this command in console)
 3.
 $git push origin master  # upload the files to the git
 
