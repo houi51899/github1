@@ -36,31 +36,29 @@ Part 2
 
  In the beginning,let's "cd" to get in the directory where the files there you want to upload and update
 
-1 
-
+1 initiate a git in this folder.
 $git init
-#initiate a git in this folder.
 
-2
+
+2 address this folder to the project in Github(replace the address with your address in github)
 
 $git remote add origin https://github.com/......../....git
-#address this folder to the project in Github(replace the address with your address in github)
 
- When upload,go into the same 
 
-1
+ When upload,go into the same folder
 
+1 select all the files in this folder
 $git add .  
-#select all the files here or use command: $git add "filename" to select  a single file  
-#PS.when use "visual studio code"'s git, press the "+"button to add/select the file, and do not! not! not! use the commit button function in VScode )
 
-2
+#or use $git add "filename" 
+#to select a single file  
+#when use "visual studio code"'s git, press the "+"button to add/select the file, and do not! not! not! use the commit button function in VScode )
 
+2 commit the selected file(do input this command in console)
 $git commit -m "comment"  
-#commit the selected file(do input this command in console)
 
-3
-$git push origin master  # upload the files to the git
+3 upload the files to the git
+$git push origin master 
 
 #Option
 #$git pull origin master #update the current files from your github  
