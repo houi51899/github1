@@ -67,4 +67,6 @@ $git push origin master
 
 #Acknowledge
 
-I want thank Mr.honma for the help in connecting the VScode to Github 
+I want thank Mr.honma for the help in connecting the VScode to Github.
+And thank your for finishing the reading and for the overlooking of my poor grammar lol.
+
