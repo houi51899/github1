@@ -2,7 +2,6 @@
 import subprocess
 from datetime import datetime
 import time
-#######################################
 
 def jtalk(t):
     open_jtalk=['open_jtalk']
