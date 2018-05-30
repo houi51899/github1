@@ -1,6 +1,7 @@
+==========================================================================================================
 This is a exam project using openjtalk to develop a alarm and share it in Github. (speech synthesis)
 
-==========================================================================================================
+
 The manual consists two parts. In the first part, I will share the experience of developing the alarm with speech synthesis engine. In the second part, I want to share the experience of how to connect Visual Studio Code with Github to manage the version of the project.
 Beware that all the opration is done in ubuntu18.04LTS
 ----------------------------------------------------------------------------------------------------------
