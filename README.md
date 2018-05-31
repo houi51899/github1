@@ -6,7 +6,7 @@ This is a exam project using openjtalk to develop a alarm and share it in Github
 The manual consists of two parts. In the first part, I will share the experience of developing the alarm with speech synthesis engine. In the second part, I want to share the experience of how to connect Visual Studio Code with Github to manage the version of the project.
 Beware that all the opration is done in ubuntu18.04LTS
 
-##Part 1
+## Part 1
 
 Preperation for openjtalk coding.
 Before the coding, we need to install some SDK. 
@@ -71,4 +71,4 @@ I want thank Mr.honma for the help in connecting the VScode to Github.
 And thank your for finishing the reading and for the overlooking of my poor grammar lol.
 
 ## References
-- [ch1. OpenJtalk+python(in Japanese)](https://qiita.com/kkoba84/items/b828229c374a249965a9)
+- [OpenJtalk+python(in Japanese)](https://qiita.com/kkoba84/items/b828229c374a249965a9)
