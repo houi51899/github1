@@ -57,7 +57,7 @@ $git commit -m "comment"
 - upload the files to the git
 $git push origin master 
 
-# Option
+# Options
 
 $git pull origin master (update the current files from your github)  
 
@@ -65,7 +65,7 @@ $git status (confirm the current status)
 
 =======================================================================================
 
-## Acknowledge
+## Acknowledgements
 
 I want thank Mr.honma for the help in connecting the VScode to Github.
 And thank your for finishing the reading and for the overlooking of my poor grammar lol.
