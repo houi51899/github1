@@ -11,15 +11,15 @@ Beware that all the opration is done in ubuntu18.04LTS
 Preperation for openjtalk coding.
 Before the coding, we need to install some SDK. 
 
-- install the engine (open-jtalk):
+- install the engine (open-jtalk)
 
 $sudo apt-get install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001
 
-- download the voice file(zip):
+- download the voice file(zip)
 
 $wget https://sourceforge.net/projects/mmdagent/files/MMDAgent_Example/MMDAgent_Example-1.6/MMDAgent_Example-1.6.zip/download -O MMDAgent_Example-1.6.zip
 
-- unzip the voice file:
+- unzip the voice file
 
 $unzip MMDAgent_Example-1.6.zip MMDAgent_Example-1.6/Voice/*
 
@@ -35,7 +35,8 @@ As for the code sourse, please check the file "test.py" in the same folder.
 
  In the beginning,let's "cd" to get in the directory where the files there you want to upload and update
 
-- initiate a git in this folder.
+- initiate a git in this folder
+
 $git init
 
 - address this folder to the project in Github(replace the address with your address in github)
@@ -43,18 +44,21 @@ $git init
 $git remote add origin https://github.com/......../....git
 
 
- When upload,go into the same folder
+When upload,go into the same folder
 
 - select all the files in this folder
+
 $git add .  
 
 or use $git add "filename" to select a single file  
 when use "visual studio code"'s git, press the "+"button to add/select the file, and do not! not! not! use the commit button function in VScode )
 
 - commit the selected file(do input this command in console)
+
 $git commit -m "comment"  
 
 - upload the files to the git
+
 $git push origin master 
 
 # Options
