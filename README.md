@@ -1,5 +1,5 @@
 ==============================================================================================
-#openjtalk alarm
+# Openjtalk alarm
 
 This is a exam project using openjtalk to develop a alarm and share it in Github. (speech synthesis)
 
@@ -25,11 +25,11 @@ $unzip MMDAgent_Example-1.6.zip MMDAgent_Example-1.6/Voice/*
 
 $sudo cp -r MMDAgent_Example-1.6/Voice/mei/ /usr/share/hts-voice
 
-with the SDK above you have enough material to build a simple synthesis program.
+with the SDK above you have enough material to build a simple speech synthesis program.
 As for the code sourse, please check the file "test.py" in the same folder. 
 
---------------------------------------------------------------------------------------------------
-##Part 2
+--------------------------------------------------------------------------------------------
+## Part 2
 
  Simple manual for the setup for VScode to Github.
 
@@ -57,15 +57,18 @@ $git commit -m "comment"
 - upload the files to the git
 $git push origin master 
 
-#Option
-$git pull origin master #update the current files from your github  
+# Option
 
-$git status #confirm the current status
+$git pull origin master (update the current files from your github)  
 
-==================================================================================================
+$git status (confirm the current status)
 
-##Acknowledge
+=======================================================================================
+
+## Acknowledge
 
 I want thank Mr.honma for the help in connecting the VScode to Github.
 And thank your for finishing the reading and for the overlooking of my poor grammar lol.
 
+## References
+- [ch1. OpenJtalk+python(in Japanese)](https://qiita.com/kkoba84/items/b828229c374a249965a9)
