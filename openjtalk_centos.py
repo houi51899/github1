@@ -5,8 +5,8 @@ import time
 
 def jtalk(t):
     open_jtalk=['open_jtalk']
-    mech=['-x','/usr/local/share/open_jtalk_dic']
-    htsvoice=['-m','/usr/local/share/hts-voice/mei_normal.htsvoice']
+    mech=['-x','/usr/local/share/open_jtalk_dic']              # the directory you put the dic in
+    htsvoice=['-m','/usr/local/share/hts-voice/mei_normal.htsvoice'] # the directory you put the voice file in
     speed=['-r','1.0']
     outwav=['-ow','open_jtalk.wav']
     cmd=open_jtalk+mech+htsvoice+speed+outwav
