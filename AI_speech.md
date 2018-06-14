@@ -5,14 +5,13 @@ In this trial, I apply the japanese speech synthesis engine(OpenJtalk) in a chat
 
 Since framwork TensorFlow has been used in the bot's scripts and the program is going to be put on a server(CentOS), first of all I need make the development environment work. 
 Here is the tools I need at least:
-
-CentOS
+- CentOS
 ------------------------------
-Python
-TensorFlow
-other modules for Python
+- Python
+- TensorFlow
+- other modules for Python
 ------------------------------
-OpenJtalk(HTS engine,voice model,source voice ,dictionary files)
+- OpenJtalk(HTS engine,voice model,source voice ,dictionary files)
 
 I divided these in to three parts.Thus the manual consists of three parts.  I would share the experience of installation for the corresponding tools.
 
