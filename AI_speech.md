@@ -32,52 +32,77 @@ After the OS installation, let's install the development tools.
 To avoid conflictions between different versions of Python, we need some tools to build a virtual environment for them. Here we use Pyenv. We can download it in https://github.com/pyenv/pyenv/releases. At present, the latest version is v1.2.4. Please download the "Source code(zip)".And then install it. The command you might use is:
 #"cd" to get into download folder
 $unzip pyenv-1.2.4.zip
+
 $mv pyenv-1.2.4 ~/.pyenv
-(After this we need setup the path:)
+
+#After this we need setup the path:
 $echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+
 $echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+
 $echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+
 $source ~/.bashrc
 
 - Install and setup Anaconda 4.3.0(here we only utilize the "conda" command not the python neither spyder...)
 $pyenv install anaconda3-4.3.0
+
 $pyenv rehash
+
 $pyenv global anaconda3-4.3.0
+
 $echo 'export PATH="$PYENV_ROOT/versions/anaconda3-4.3.0/bin/:$PATH"' >> ~/.bashrc
+
 $source ~/.bashrc
 #update anaconda and confirm current python version
+
 $conda update conda
+
 $python -V
 
 - Install Python ( Yes, it's necessary)
 $conda create -n tensorflow python=3.6.0
+
 $source activate tensorflow
+
 $python -V
 
 - Install TensorFlow
 $export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.1-cp36-cp36m-linux_x86_64.whl
+
 $pip install --ignore-installed --upgrade $TF_BINARY_URL
 #now the installation of tensorflow and corresponding python has been down.
 
 -Check whether it works
 $source activate tensorflow(go into the virtual tensorflow environment)
+
 $python
+
 $import tensorflow as tf
+
 $hello = tf.constant('Hello, TensorFlow!')
+
 $sess = tf.Session()
+
 $print(sess.run(hello))
+
 #If you can see the text 'Hello, TensorFlow!', it means the installation is successful. Then press Ctrl+D to exit python. And finally exit virtual tensorflow environment by:
 $source deactivate
 
 - Beware that to run a source coding using tensorflow module, you need:
 $source activate tensorflow #go into the virtual environment
+
 $python XXXX.py #run your code file here
 
 - (option)Also beware that you are not in the environment of anaconda&spyder. Many libraries are not installed in this environment. You need add them manually in the way like this:
 $source activate tensorflow
+
 $conda install -c anaconda numpy=1.12.1
+
 $conda install -c menpo opencv3=3.1.0
+
 $conda install -c anaconda pillow=4.0.0
+
 $conda install -c anaconda pandas #not sure
 
 --------------------------------------------------------------------------------------------
@@ -90,29 +115,47 @@ $yum install alsa-utils unzip wget gcc gcc-c++
 - Download and install hts_engine, OpenJTalk, voice model, dictionary.
 
 $mkdir ~/download/
+
 $mkdir ~/src/
+
 $cd ~/download
+
 $wget https://jaist.dl.sourceforge.net/project/hts-engine/hts_engine%20API/hts_engine_API-1.10/hts_engine_API-1.10.tar.gz
+
 $wget https://jaist.dl.sourceforge.net/project/open-jtalk/Open%20JTalk/open_jtalk-1.10/open_jtalk-1.10.tar.gz
+
 $wget https://jaist.dl.sourceforge.net/project/open-jtalk/HTS%20voice/hts_voice_nitech_jp_atr503_m001-1.05/hts_voice_nitech_jp_atr503_m001-1.05.tar.gz
+
 $wget http://downloads.sourceforge.net/open-jtalk/open_jtalk_dic_utf_8-1.10.tar.gz
+
 $cd ~/src/
+
 $tar xvzf ~/download/hts_engine_API-1.10.tar.gz
+
 $cd hts_engine_API-1.10/
+
 $./configure
+
 $make
+
 $make install
 
 $tar xzvf ~/download/open_jtalk-1.10.tar.gz
+
 $cd open_jtalk-1.10/
+
 $./configure --with-charset=UTF-8
+
 $make
+
 $make install
 
 $tar xzfv ~/download/hts_voice_nitech_jp_atr503_m001-1.05.tar.gz
+
 $mv hts_voice_nitech_jp_atr503_m001-1.05 /usr/local/share/hts_voice
 
 $tar xzfv ~/download/open_jtalk_dic_utf_8-1.10.tar.gz
+
 $mv open_jtalk_dic_utf_8-1.10 /usr/local/share/open_jtalk_dic
 
 #Now the setup for all of three parts has be done. 
