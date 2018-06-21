@@ -33,6 +33,7 @@ After the OS installation, let's install the development tools.
 - Build virtual environment for Python
 To avoid conflictions between different versions of Python, we need some tools to build a virtual environment for them. Here we use Pyenv. We can download it in https://github.com/pyenv/pyenv/releases. At present, the latest version is v1.2.4. Please download the "Source code(zip)".And then install it. The command you might use is:
 #"cd" to get into download folder
+
 $unzip pyenv-1.2.4.zip
 
 $mv pyenv-1.2.4 ~/.pyenv
@@ -47,6 +48,7 @@ $echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 $source ~/.bashrc
 
 - Install and setup Anaconda 4.3.0(here we only utilize the "conda" command not the python neither spyder...)
+
 $pyenv install anaconda3-4.3.0
 
 $pyenv rehash
@@ -63,6 +65,7 @@ $conda update conda
 $python -V
 
 - Install Python ( Yes, it's necessary)
+
 $conda create -n tensorflow python=3.6.0
 
 $source activate tensorflow
@@ -70,12 +73,14 @@ $source activate tensorflow
 $python -V
 
 - Install TensorFlow
+
 $export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.1-cp36-cp36m-linux_x86_64.whl
 
 $pip install --ignore-installed --upgrade $TF_BINARY_URL
 #now the installation of tensorflow and corresponding python has been down.
 
 -Check whether it works
+
 $source activate tensorflow(go into the virtual tensorflow environment)
 
 $python
@@ -89,14 +94,17 @@ $sess = tf.Session()
 $print(sess.run(hello))
 
 #If you can see the text 'Hello, TensorFlow!', it means you complete the installation successfully. Then press Ctrl+D to exit python. And finally exit virtual tensorflow environment by:
+
 $source deactivate
 
 - Beware that to run a source coding using tensorflow module, you need:
+
 $source activate tensorflow #go into the virtual environment
 
 $python XXXX.py #run your code file here
 
 - (option)Also beware that you are not in the environment of anaconda&spyder. Many libraries are not installed in this environment. You need add them manually in the way like this:
+
 $source activate tensorflow
 
 $conda install -c anaconda numpy=1.12.1
@@ -107,10 +115,16 @@ $conda install -c anaconda pillow=4.0.0
 
 $conda install -c anaconda pandas #not sure
 
+#if  the module installation finished 
+
+$source deactivate tensorflow
+
 --------------------------------------------------------------------------------------------
 ## Part 3
 Install OpenJalk
 - Install Some necessary tools
+
+$su #go to root
 
 $yum install alsa-utils unzip wget gcc gcc-c++
 
@@ -162,10 +176,15 @@ $mv open_jtalk_dic_utf_8-1.10 /usr/local/share/open_jtalk_dic
 
 #Now the setup for all of three parts has be done. 
 
-
-
-
 =======================================================================================
+After the setup above, 
+you can 
+
+$cd XXX
+
+$source activate tensorflow 
+
+$python XXX.py
 
 ## Acknowledgements
 
