@@ -2,7 +2,7 @@
 import subprocess
 from datetime import datetime
 import time
-##################################
+
 def jtalk(t):
     open_jtalk=['open_jtalk']
     mech=['-x','/var/lib/mecab/dic/open-jtalk/naist-jdic']
