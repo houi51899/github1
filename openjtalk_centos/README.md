@@ -1,5 +1,5 @@
 ==============================================================================================
-# Speaking Chat Bot using TensorFlow on CentOS
+# Speaking Chat Bot using TensorFlow on CentOS (For those only need  install openjtalk, see part3 to install openjtalk and other SDK.)
 
 In this trial, I apply the Japanese speech synthesis engine(OpenJTalk) in a chat bot whose replies generated using framework TensorFlow. In this way, the bot could response to the complain by voice.
 
