@@ -29,7 +29,7 @@ with the SDK above you have enough material to build a simple speech synthesis p
 As for the code sourse, please check the file "test.py" in the same folder. 
 
 --------------------------------------------------------------------------------------------
-## Part 2
+## Part 2 (not neccessary for those using "clone" to get these files)
 
  Simple manual for the setup for VScode to Github.
 
